@@ -1,0 +1,116 @@
+*** STRESS TEST RESULT ***
+
+* Algorithm: PERCEPTRON
+* Test Data: 4colors
+
+- Iteration 1: Classification time: 28.064 seconds - Kappa Coefficient: 0.874
+- Iteration 2: Classification time: 19.2382 seconds - Kappa Coefficient: 0.8649
+- Iteration 3: Classification time: 18.8395 seconds - Kappa Coefficient: 0.868
+- Iteration 4: Classification time: 18.9884 seconds - Kappa Coefficient: 0.8649
+- Iteration 5: Classification time: 19.2319 seconds - Kappa Coefficient: 0.868
+- Iteration 6: Classification time: 18.8728 seconds - Kappa Coefficient: 0.8649
+- Iteration 7: Classification time: 19.305 seconds - Kappa Coefficient: 0.868
+- Iteration 8: Classification time: 18.8245 seconds - Kappa Coefficient: 0.8649
+- Iteration 9: Classification time: 18.2249 seconds - Kappa Coefficient: 0.8649
+- Iteration 10: Classification time: 19.0259 seconds - Kappa Coefficient: 0.8649
+- Iteration 11: Classification time: 19.0223 seconds - Kappa Coefficient: 0.8649
+- Iteration 12: Classification time: 18.9539 seconds - Kappa Coefficient: 0.8649
+- Iteration 13: Classification time: 19.1638 seconds - Kappa Coefficient: 0.8649
+- Iteration 14: Classification time: 19.2396 seconds - Kappa Coefficient: 0.8649
+- Iteration 15: Classification time: 18.4683 seconds - Kappa Coefficient: 0.8649
+- Iteration 16: Classification time: 18.8981 seconds - Kappa Coefficient: 0.8649
+- Iteration 17: Classification time: 18.6414 seconds - Kappa Coefficient: 0.8649
+- Iteration 18: Classification time: 18.7468 seconds - Kappa Coefficient: 0.8649
+- Iteration 19: Classification time: 19.2446 seconds - Kappa Coefficient: 0.8649
+- Iteration 20: Classification time: 18.9397 seconds - Kappa Coefficient: 0.8649
+- Iteration 21: Classification time: 18.9211 seconds - Kappa Coefficient: 0.8649
+- Iteration 22: Classification time: 18.5863 seconds - Kappa Coefficient: 0.8649
+- Iteration 23: Classification time: 19.0204 seconds - Kappa Coefficient: 0.8649
+- Iteration 24: Classification time: 19.1654 seconds - Kappa Coefficient: 0.8649
+- Iteration 25: Classification time: 18.8301 seconds - Kappa Coefficient: 0.8649
+- Iteration 26: Classification time: 18.6903 seconds - Kappa Coefficient: 0.8649
+- Iteration 27: Classification time: 18.9453 seconds - Kappa Coefficient: 0.8649
+- Iteration 28: Classification time: 19.0583 seconds - Kappa Coefficient: 0.8649
+- Iteration 29: Classification time: 18.7777 seconds - Kappa Coefficient: 0.8649
+- Iteration 30: Classification time: 18.9771 seconds - Kappa Coefficient: 0.8649
+- Iteration 31: Classification time: 19.1556 seconds - Kappa Coefficient: 0.8649
+- Iteration 32: Classification time: 18.6552 seconds - Kappa Coefficient: 0.8649
+- Iteration 33: Classification time: 18.6393 seconds - Kappa Coefficient: 0.8649
+- Iteration 34: Classification time: 19.0677 seconds - Kappa Coefficient: 0.8649
+- Iteration 35: Classification time: 18.886 seconds - Kappa Coefficient: 0.8649
+- Iteration 36: Classification time: 18.8711 seconds - Kappa Coefficient: 0.8649
+- Iteration 37: Classification time: 18.6582 seconds - Kappa Coefficient: 0.8649
+- Iteration 38: Classification time: 19.2175 seconds - Kappa Coefficient: 0.8649
+- Iteration 39: Classification time: 18.5184 seconds - Kappa Coefficient: 0.8649
+- Iteration 40: Classification time: 18.8759 seconds - Kappa Coefficient: 0.8649
+- Iteration 41: Classification time: 18.5774 seconds - Kappa Coefficient: 0.8649
+- Iteration 42: Classification time: 18.8403 seconds - Kappa Coefficient: 0.8649
+- Iteration 43: Classification time: 18.8102 seconds - Kappa Coefficient: 0.8649
+- Iteration 44: Classification time: 18.9527 seconds - Kappa Coefficient: 0.8649
+- Iteration 45: Classification time: 18.9794 seconds - Kappa Coefficient: 0.8649
+- Iteration 46: Classification time: 18.7751 seconds - Kappa Coefficient: 0.865
+- Iteration 47: Classification time: 18.6773 seconds - Kappa Coefficient: 0.8649
+- Iteration 48: Classification time: 18.5803 seconds - Kappa Coefficient: 0.865
+- Iteration 49: Classification time: 19.1019 seconds - Kappa Coefficient: 0.8649
+- Iteration 50: Classification time: 18.9158 seconds - Kappa Coefficient: 0.865
+- Iteration 51: Classification time: 18.6378 seconds - Kappa Coefficient: 0.865
+- Iteration 52: Classification time: 18.5956 seconds - Kappa Coefficient: 0.865
+- Iteration 53: Classification time: 18.7882 seconds - Kappa Coefficient: 0.865
+- Iteration 54: Classification time: 18.5685 seconds - Kappa Coefficient: 0.865
+- Iteration 55: Classification time: 18.5669 seconds - Kappa Coefficient: 0.865
+- Iteration 56: Classification time: 18.6076 seconds - Kappa Coefficient: 0.865
+- Iteration 57: Classification time: 18.563 seconds - Kappa Coefficient: 0.865
+- Iteration 58: Classification time: 17.8954 seconds - Kappa Coefficient: 0.865
+- Iteration 59: Classification time: 18.663 seconds - Kappa Coefficient: 0.865
+- Iteration 60: Classification time: 19.0183 seconds - Kappa Coefficient: 0.865
+- Iteration 61: Classification time: 18.7702 seconds - Kappa Coefficient: 0.865
+- Iteration 62: Classification time: 18.7536 seconds - Kappa Coefficient: 0.865
+- Iteration 63: Classification time: 18.3543 seconds - Kappa Coefficient: 0.865
+- Iteration 64: Classification time: 18.7754 seconds - Kappa Coefficient: 0.865
+- Iteration 65: Classification time: 18.971 seconds - Kappa Coefficient: 0.865
+- Iteration 66: Classification time: 18.5429 seconds - Kappa Coefficient: 0.865
+- Iteration 67: Classification time: 18.5839 seconds - Kappa Coefficient: 0.865
+- Iteration 68: Classification time: 18.5337 seconds - Kappa Coefficient: 0.865
+- Iteration 69: Classification time: 18.6992 seconds - Kappa Coefficient: 0.865
+- Iteration 70: Classification time: 19.0547 seconds - Kappa Coefficient: 0.865
+- Iteration 71: Classification time: 19.0034 seconds - Kappa Coefficient: 0.865
+- Iteration 72: Classification time: 18.5011 seconds - Kappa Coefficient: 0.865
+- Iteration 73: Classification time: 18.5095 seconds - Kappa Coefficient: 0.865
+- Iteration 74: Classification time: 18.8923 seconds - Kappa Coefficient: 0.865
+- Iteration 75: Classification time: 19.3631 seconds - Kappa Coefficient: 0.865
+- Iteration 76: Classification time: 18.6665 seconds - Kappa Coefficient: 0.865
+- Iteration 77: Classification time: 18.8708 seconds - Kappa Coefficient: 0.865
+- Iteration 78: Classification time: 18.7138 seconds - Kappa Coefficient: 0.865
+- Iteration 79: Classification time: 18.1826 seconds - Kappa Coefficient: 0.865
+- Iteration 80: Classification time: 18.5376 seconds - Kappa Coefficient: 0.865
+- Iteration 81: Classification time: 18.6868 seconds - Kappa Coefficient: 0.865
+- Iteration 82: Classification time: 18.8116 seconds - Kappa Coefficient: 0.865
+- Iteration 83: Classification time: 18.5282 seconds - Kappa Coefficient: 0.865
+- Iteration 84: Classification time: 19.1696 seconds - Kappa Coefficient: 0.865
+- Iteration 85: Classification time: 19.1862 seconds - Kappa Coefficient: 0.865
+- Iteration 86: Classification time: 18.7333 seconds - Kappa Coefficient: 0.865
+- Iteration 87: Classification time: 19.1254 seconds - Kappa Coefficient: 0.865
+- Iteration 88: Classification time: 18.6935 seconds - Kappa Coefficient: 0.865
+- Iteration 89: Classification time: 18.8505 seconds - Kappa Coefficient: 0.865
+- Iteration 90: Classification time: 18.3651 seconds - Kappa Coefficient: 0.865
+- Iteration 91: Classification time: 18.6683 seconds - Kappa Coefficient: 0.865
+- Iteration 92: Classification time: 18.3418 seconds - Kappa Coefficient: 0.865
+- Iteration 93: Classification time: 18.7597 seconds - Kappa Coefficient: 0.865
+- Iteration 94: Classification time: 2934.79 seconds - Kappa Coefficient: 0.865
+- Iteration 95: Classification time: 19.0267 seconds - Kappa Coefficient: 0.865
+- Iteration 96: Classification time: 176.6217 seconds - Kappa Coefficient: 0.865
+- Iteration 97: Classification time: 15.8886 seconds - Kappa Coefficient: 0.865
+- Iteration 98: Classification time: 14.904 seconds - Kappa Coefficient: 0.865
+- Iteration 99: Classification time: 13.7045 seconds - Kappa Coefficient: 0.865
+- Iteration 100: Classification time: 15.6997 seconds - Kappa Coefficient: 0.865
+
+* TIME AVERAGE: 49.4840001247 seconds
+* KAPPA COEFFICIENT AVERAGE: 0.865150267946
+
+* Details:
+	- Percentage of Kappa Coefficient less or equal than 0.00: 0.0%
+	- Percentage of Kappa Coefficient between 0.00 and 0.20: 0.0%
+	- Percentage of Kappa Coefficient between 0.21 and 0.40: 0.0%
+	- Percentage of Kappa Coefficient between 0.41 and 0.60: 0.0%
+	- Percentage of Kappa Coefficient between 0.61 and 0.80: 0.0%
+	- Percentage of Kappa Coefficient between 0.81 and 1.00: 100.0%
