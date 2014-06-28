@@ -34,10 +34,10 @@ class FileMenu(object):
 def getClassificationMenu(main_frame, menu_bar):
     menu = Menu(menu_bar, tearoff=0)
     
-    menu.add_command(label = 'SOM classification', 
-                     command = main_frame.on_apply_som_algorithm)
     menu.add_command(label = 'Perceptron classification',
                      command = main_frame.on_apply_perceptron_algorithm)
+    menu.add_command(label = 'SOM classification', 
+                     command = main_frame.on_apply_som_algorithm)
     
     menu.add_separator()
     menu.add_command(label = 'K-means classification',
