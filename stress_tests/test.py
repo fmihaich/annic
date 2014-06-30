@@ -137,9 +137,6 @@ def _get_set_class(classified_img, box_set):
     x, _, y, _ = box_set[0]
     pixel = classified_img.getpixel((x,y))
     print "% pixel: ", pixel
-#     cropped_img = _crop_image(classified_img, box_set)
-#     pixel = cropped_img[0]
-#     print "% pixel: ", pixel
     try:
         set_class = CLASS_COLOR_RGB.index(pixel)
         print "% set_class: ", set_class
@@ -147,10 +144,7 @@ def _get_set_class(classified_img, box_set):
     except ValueError:
         print "% set_class - default: ", 0
         return 0
-#     
-# def _crop_image(img, box):
-#     img_region = img.crop(box)
-#     return list(img_region.getdata())
+
         
 def _save_stress_test_result(file_name, algorithm, times, kappa):
     result_file = os.path.join(OUTPUT_DIR, file_name)
