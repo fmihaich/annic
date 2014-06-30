@@ -1,3 +1,23 @@
+"""
+
+SAMPLES COLLECTION
+
+===================
+This module allows user to select sample collections to use:
+    - As training set in classification process.
+    - As known samples during the verification of the classification.
+There are two types of samples collections:
+    - Samples collection per class: 
+        Each sub-set is associated to specific class or category.
+    - Samples collection: Different class samples are included in a single set.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Label, Radiobutton, IntVar, OptionMenu
 from annic.definitions import MAX_NUMBER_OF_CLASSES, CLASS_COLOR, \
                               DEFAULT_NUMBER_OF_CLASS, DEFAULT_CLASS

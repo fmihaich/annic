@@ -1,3 +1,21 @@
+"""
+
+ANNIC MENU BAR
+
+==============
+This module contains the definition of ANNIC UI menu bar.
+This bar is made of three "sub-menus": 
+    - File menu: Provide the possibility to open or save an image, or exit.
+    - Classification Menu: Allows user to select classification algorithm.
+    - Validation Menu: Make possible to select the validation method. 
+--------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Menu
 
 def AnnicMenuBar(root, main_frame):

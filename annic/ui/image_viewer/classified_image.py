@@ -1,3 +1,17 @@
+"""
+
+ANNIC CLASSIFIED IMAGE VIEW
+
+===================
+This module shows classified image after apply any of the provided algorithms.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Label
 from ImageTk import PhotoImage
 

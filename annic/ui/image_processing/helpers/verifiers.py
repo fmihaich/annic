@@ -1,3 +1,23 @@
+"""
+
+ANNIC CLASSIFICATION VERIFIER
+
+===================
+This module:
+    - Executes the verification of the classification when user starts it, and
+    - Presents the validation results.
+The result of the verification are:
+    - The confusion matrix, and 
+    - The related Kappa coefficient.
+They are shown in a new window (defined in confusion matrix viewer module).
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Button
 from annic.ui.validation_viewer.confusion_matrix_viewer import ConfusionMatrixViewer
 from annic.core.confusion_matrix import CalculateConfusionMatrix

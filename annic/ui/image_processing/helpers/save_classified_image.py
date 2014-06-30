@@ -1,3 +1,17 @@
+"""
+
+SAVE CLASSIFIED IMAGE
+
+===================
+This module allows user to save classified image.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Button
 from annic.ui.file_management.image_file import save_image_file
 

@@ -1,3 +1,21 @@
+"""
+
+ANNIC ORIGINAL IMAGE VIEW
+
+===================
+This module:
+    - Shows original image (open or selected by user).
+    - Allows user to take samples to use:
+        - As training set in classification process.
+        - As known samples during the verification of the classification.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Canvas
 from ImageTk import PhotoImage
 import Image

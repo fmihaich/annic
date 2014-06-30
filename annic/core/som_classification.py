@@ -1,3 +1,30 @@
+"""
+
+SOM CLASSIFICATION
+
+===================
+This module performs the image classification based on SOM ANN.
+Inputs:
+    - Original image,
+    - Training samples,
+    - Number of classes,
+    - Maximum training error allowed, and
+    - Maximum training iteration number allowed.
+Output:
+    - Classified image.
+
+The algorithm trains a SOM network using training samples and settings. Each 
+neuron in the network has associated a class.
+When training process ends, the method introduce each image pixel to SOM ANN.
+Pixel class is the nearest neuron class.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 import Image
 import numpy as np
 import neurolab as nl

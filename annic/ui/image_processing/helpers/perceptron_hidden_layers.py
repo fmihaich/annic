@@ -1,3 +1,19 @@
+"""
+
+PERCEPTRON HIDDEN LAYERS
+
+===================
+This module allows user to select perceptron hidden layer structure:
+    - User can select the number of hidden layers, and 
+    - User can select the number of neuron per hidden layer.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Label, IntVar, OptionMenu
 
 DEFAULT_NUMBER_OF_HIDDEN_LAYERS = 1

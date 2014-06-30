@@ -1,3 +1,35 @@
+"""
+
+SOM CLASSIFICATION
+
+===================
+This module performs the image classification based on Perceptron ANN.
+Inputs:
+    - Original image,
+    - Training samples per class,
+    - Number of classes,
+    - Maximum training error allowed,
+    - Maximum training iteration number allowed, and
+    - Hidden layer structure.
+Output:
+    - Classified image using Perceptron network during training phase.
+
+The algorithm trains a Perceptron network using training samples and settings:
+    - The number of neurons of the input layer is equal to image grey levels,
+    - The hidden layer structure is the one provided by user,
+    - The output layer has only one neuron that takes values from 0 to 1,
+    - Each training set has associated a numeric representation of the class:
+        - class(i) = i / (class_number - 1)
+When training process ends, the method introduce each image pixel to the 
+network. Pixel class is the nearest neuron class (winner neuron class).
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 import Image
 import neurolab as nl
 from annic.core.helpers.set_management import optimize_set, normalize_pixel_set

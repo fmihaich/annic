@@ -1,3 +1,20 @@
+"""
+
+ANNIC STRESS TEST DATA DEFINITIONS
+
+================
+This file contains the test data definitions needed to run ANNIC stress test.
+Two image could be taken as input to execute stress tests: 4colors and boxes.
+The definitions, available for each test image, are:
+    - Training set: Used during the execution of any classification method, and
+    - Validation set: Used to evaluate the classified image.
+----------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
 import Image
 import os
 

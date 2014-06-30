@@ -1,3 +1,19 @@
+"""
+
+ANNIC IMAGE FILE MANAGEMENT
+
+===================
+This module allows user to manage image file:
+    - User can select original image path.
+    - User can save the classified image.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from tkFileDialog import askopenfilename, asksaveasfilename
 import Image
 

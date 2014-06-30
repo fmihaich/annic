@@ -1,3 +1,30 @@
+"""
+
+K-MEANS CLASSIFICATION
+
+===================
+This module performs the image classification based on K-means algorithm.
+Inputs:
+    - Original image,
+    - Training samples,
+    - Number of classes,
+    - Maximum training error allowed, and
+    - Maximum training iteration number allowed.
+Output:
+    - Classified image using K-means algorithm.
+
+The algorithm finds at most "K" centroids during training phase using training
+samples and settings. Each centoid has associated a class.
+When training process ends, the method classifies each image pixel using 
+K-means algorithm. Pixel class is the nearest centroid class.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 import Image
 from scipy.cluster.vq import kmeans, vq, whiten
 from annic.core.helpers.set_management import optimize_set

@@ -1,3 +1,16 @@
+"""
+
+ANNIC MAIN DEFINITIONS
+
+================
+This file contains the common definitions using in UI and core modules.
+----------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
 
 MAX_NUMBER_OF_CLASSES = 8
 

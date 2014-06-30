@@ -1,3 +1,19 @@
+"""
+
+TRAINING SETTINGS
+
+===================
+This module allows user to select training settings to use during classification
+    - User can select the maximum training error allowed, and 
+    - User can select the maximum training iterations allowed.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Label, DoubleVar, IntVar, OptionMenu
 from annic.definitions import DEFAULT_TRAINING_ERROR, DEFAULT_MAX_ITERATIONS
 

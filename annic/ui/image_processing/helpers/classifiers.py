@@ -1,3 +1,24 @@
+"""
+
+ANNIC CLASSIFIERS
+
+===================
+This module:
+    - Executes the selected classification algorithm when user starts it, 
+    - Uses parameters selected by user (samples and training settings), and
+    - Presents the classified image. (It is shown in classified image frame).
+The available classifiers are:
+    - Perceptron classifier,
+    - SOM classifier, and
+    - K-means classifier.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Button
 from annic.core.k_means_classification import KMeansClassification
 from annic.core.som_classification import SOMClassification

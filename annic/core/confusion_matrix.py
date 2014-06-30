@@ -1,3 +1,28 @@
+"""
+
+CONFUSION MATRIX
+
+===================
+This module verifies the classification quality thought a confusion matrix.
+Inputs:
+    - Classified image, and
+    - Known samples per class.
+Output:
+    - Confusion matrix, and
+    - Kappa coefficient.
+
+This module summarizes the relation between known classes and classes got by 
+the used classification algorithm.
+In order to reach that goal, a confusion matrix and a Kappa coefficient are 
+calculated.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from annic.definitions import CLASS_COLOR_RGB
 import numpy as np
 import itertools

@@ -1,3 +1,21 @@
+"""
+
+ANNIC STRESS TEST
+
+================
+This module executes the stress test for any of the classification methods.
+The available stress test are:
+    - Perceptron stress test,
+    - SOM stress test, and
+    - K-means stress test.
+----------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 import time
 import numpy as np
 import os

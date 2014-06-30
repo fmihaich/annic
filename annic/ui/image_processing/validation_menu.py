@@ -1,3 +1,24 @@
+"""
+
+ANNIC VALIDATION MENU
+
+===================
+This module contains the definition of the available validation menu.
+The verification method available is "confusion matrix", that allows user:
+    - To select validation parameters (number of classes and class samples),
+    - To start the verification.
+The result of the verification are:
+    - The confusion matrix, and 
+    - The related Kappa coefficient.
+They are shown in a new window.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Label
 from annic.ui.image_processing.helpers.samples_collection import SamplesCollectionPerClass
 from annic.ui.image_processing.helpers.verifiers import ConfusionMatrixVerifier

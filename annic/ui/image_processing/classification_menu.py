@@ -1,3 +1,27 @@
+"""
+
+ANNIC CLASSIFICATION MENU
+
+===================
+This module contains the definition of the available classification menus.
+A classification menu allows user:
+    - To select classification parameters (samples and training settings),
+    - To start the classification algorithm (Perceptron, SOM or K-means), and
+    - To save the classified image.
+The available classification menus are:
+    - Perceptron classification menu,
+    - SOM classification menu, and
+    - K-means classification menu.
+There is also and "Empty classification menu" used to hide any other menu.
+The result of the classification execution is shown in classified image frame.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Label
 from annic.ui.image_processing.helpers.classifiers import KMeansClassifier, \
                                                           SOMClassifier, \

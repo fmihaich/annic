@@ -1,3 +1,21 @@
+"""
+
+SET MANAGEMENT HELPERS
+
+===================
+This module defines three help functions used for set management:
+    - Optimize set,
+    - Normalize pixel set, and
+    - Get pixel from normalized set
+The descriptions are included in each function definition.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 import numpy as np
 
 MAX_PIXEL_ND = 255

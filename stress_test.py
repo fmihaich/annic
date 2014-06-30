@@ -1,3 +1,25 @@
+"""
+
+ANNIC STRESS TEST
+
+================
+This module allows user to execute stress test running the following command:
+    - python stress_test.py --algorithm <algorithm_name> 
+                            --data <data_option> 
+                            --iterations <iterations_number> 
+                            --output <output_file_path>
+The stress method could Perceptron, SOM or K-means.
+The stress data is defined in test data file based on available test images.
+It also available a help menu executing:
+    -  python stress_test.py --help
+----------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 import argparse
 from stress_tests.test import PerceptronStressTest, SOMStressTest, KMeansStressTest
 

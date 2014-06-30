@@ -1,3 +1,19 @@
+"""
+
+ANNIC CONFUSION MATRIX VIEWER
+
+===================
+This module:
+    - Shows validation results in a new window. 
+    - Allow user to save verification results.
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 from Tkinter import Frame, Label, Button, Toplevel, Entry, StringVar
 
 DEFAULT_FONT = ('Arial', 10)

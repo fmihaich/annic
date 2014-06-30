@@ -1,3 +1,22 @@
+"""
+
+ANNIC APP CONTAINER
+
+===================
+This module contains the definition of ANNIC main UI.
+The UI is divided in "three big sections": 
+    - Annic menu bar: Defined in menu_bar module.
+    - Image processing menu: Allows user to select parameters to use 
+                             during classification or validation.
+    - Images framework: Where original and classified images are shown. 
+-------------------
+
+@author: Florencia Mihaich
+@version: 1.0
+@date: June 6th, 2014
+
+"""
+
 import os
 from Tkinter import Tk, Frame
 from annic.ui.main.menu_bar import AnnicMenuBar
