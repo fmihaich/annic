@@ -15,6 +15,8 @@ This module:
 """
 
 from Tkinter import Frame, Label, Button, Toplevel, Entry, StringVar
+from annic.ui.file_management.confusion_matrix_file import \
+                                                save_validation_results
 
 DEFAULT_FONT = ('Arial', 10)
 BOLD_FONT = ('Arial', 10, 'bold')
@@ -45,7 +47,7 @@ class ConfusionMatrixViewer():
         save_button.pack(anchor = 'center', padx = 5, pady = 5)
         
     def _save_validation(self):
-        pass
+        save_validation_results(self.child_window, self.matrix, self.kappa)
 
 
 class ConfusionMatrixTable(Frame):
