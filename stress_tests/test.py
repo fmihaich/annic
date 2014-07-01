@@ -50,7 +50,9 @@ class StressTest():
         
         for _ in range(self.iterations):
             classification_time.append(self._get_classification_time())
-            kappa.append(self._get_kappa_coefficient())
+            new_kappa = self._get_kappa_coefficient()
+            kappa.append(new_kappa)
+            print "Kappa coefficient: ", new_kappa
             
         _save_stress_test_result(self.output_file, self.algorithm_name, 
                                  classification_time, kappa)
@@ -134,20 +136,6 @@ def _get_one_samples_set(samples_per_class):
         samples_set.extend(samples)
     
     return samples_set
-
-
-def _get_set_class(classified_img, box_set):
-    print "% box_set[0]: ", box_set[0]
-    x, _, y, _ = box_set[0]
-    pixel = classified_img.getpixel((x,y))
-    print "% pixel: ", pixel
-    try:
-        set_class = CLASS_COLOR_RGB.index(pixel)
-        print "% set_class: ", set_class
-        return set_class
-    except ValueError:
-        print "% set_class - default: ", 0
-        return 0
 
         
 def _save_stress_test_result(file_name, algorithm, times, kappa):

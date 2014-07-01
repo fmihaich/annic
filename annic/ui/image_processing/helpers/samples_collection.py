@@ -171,8 +171,6 @@ class SamplesCollectorPerClass(Frame):
     def add_samples(self, new_samples):
         current_class = self.selected_class.get()
         self.samples[current_class] = self.samples[current_class] + new_samples
-        print "Sample collector - add samples: ", \
-                [len(self.samples[i]) for i in range(MAX_NUMBER_OF_CLASSES)]
                 
     def add_sample_coordinates(self, new_coordinates):
         current_class = self.selected_class.get()

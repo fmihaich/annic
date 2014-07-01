@@ -42,8 +42,7 @@ class CalculateConfusionMatrix():
         matrix = _add_ommision_errors(class_number, matrix)
 
         kappa = _get_kappa_coefficient(class_number, matrix)
-        print "kappa: ", kappa
-        
+                
         return (matrix, kappa)
         
 def _get_data(class_number, img, coordinates):

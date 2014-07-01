@@ -65,9 +65,9 @@ class PerceptronClassification():
         print '\n**** TRAINING PERCEPTRON NETWORK ****\n'
         self._train_network()
     
+        print '\n**** LOADING CLASS IMAGE  ****\n'
         network_output = self._simulate_network_using_full_image()
         classified_img = self._get_classified_image(network_output)
-        classified_img.save("classified_perceptron.jpg", 'JPEG')
         
         return classified_img
 

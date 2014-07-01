@@ -33,17 +33,16 @@ class ConfusionMatrixVerifier(Frame):
         open_button.pack()
                 
     def _on_calculate(self):
-        print "CONFUSION MATRIX - samples_coordinates: ", self.parent.samples_coordinates
+        print "\n**** VERIFYING CLASSIFIED IMAGE ****\n"
         confusion_matrix_calculator = \
                     CalculateConfusionMatrix(
                                 classified_image = self.parent.classified_image, 
                                 samples_coordinates = self.parent.samples_coordinates) 
         
         confusion_matrix, kappa = confusion_matrix_calculator.run()
+        print "Kappa coefficient: {0}\n".format(kappa)
         
         class_number = len(self.parent.samples_coordinates)
         
         displayer = ConfusionMatrixViewer(class_number, confusion_matrix, kappa)
         displayer.run()
-
-        print "Confusion Matrix Verifier running!"

@@ -42,9 +42,13 @@ def main():
         print 'Error getting stress test. Check input parameters in --help menu'
         return
     
-    print 'Running {0} stress test for {1} data'.format(algorithm, data)           
+    print '\n***************** STESS TESTS **********************\n'
+    print 'Running {0} stress tests for {1} data\n'.format(algorithm.upper(), 
+                                                           data.upper())           
     stress_test.run()
 
+    print '\nSee stress tests results in "{0}"'.format(output)
+    print '\n****************************************************\n'
 
 def _get_cmd_args():
     """ Retrieves all known command line arguments """
