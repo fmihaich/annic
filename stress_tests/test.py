@@ -19,6 +19,7 @@ The available stress test are:
 import time
 import numpy as np
 import os
+import itertools
 
 from annic.core.perceptron_classification import PerceptronClassification
 from annic.core.som_classification import SOMClassification
@@ -57,20 +58,26 @@ class StressTest():
     def _get_classification_time(self):
         start_time = time.clock()
         self.classified_img = self.classification.run()
-        self.classified_img.save(os.path.join(OUTPUT_DIR,'test_img.jpg'), 'JPEG')
+        self.classified_img.save(os.path.join(OUTPUT_DIR,'test_img.jpg'), 
+                                 'JPEG')
         return time.clock()- start_time
        
     def _get_kappa_coefficient(self):
-        validation_set = self._get_validation_set()
-        verifier = CalculateConfusionMatrix( 
+        # For algorithms where user select "sample collection" NOT per class
+        validation_set = self.test_data.validation_set
+        kappa = -1.0
+        for permuted_set in itertools.permutations(validation_set):
+            verifier = CalculateConfusionMatrix( 
                                     classified_image = self.classified_img, 
-                                    samples_coordinates = validation_set)
-        _, kappa = verifier.run()
+                                    samples_coordinates = list(permuted_set))
+            _, new_kappa = verifier.run()
+            kappa = max(kappa, new_kappa)
+            if kappa == 1:
+                # The maximum Kappa coefficient reached
+                return kappa
+        
         return kappa
-        
-    def _get_validation_set(self):
-        return self.test_data.validation_set
-        
+
 
 class PerceptronStressTest(StressTest):
     def __init__(self, test_data, iterations, algorithm_name, output_file):
@@ -84,7 +91,16 @@ class PerceptronStressTest(StressTest):
             training_error = self.test_data.training_error, 
             max_iteration_number = self.test_data.max_iteration_number,
             hidden_layer_structure = self.test_data.perceptron_hidden_layers) 
+    
+    def _get_kappa_coefficient(self):
+        # For algorithms where user select "sample collection per class"
+        validation_set = self.test_data.validation_set
+        verifier = CalculateConfusionMatrix( 
+                                    classified_image = self.classified_img, 
+                                    samples_coordinates = list(validation_set))
+        _, kappa = verifier.run()
         
+        return kappa
 
 class SOMStressTest(StressTest):
     def __init__(self, test_data, iterations, algorithm_name, output_file):
@@ -98,18 +114,6 @@ class SOMStressTest(StressTest):
             training_error = self.test_data.training_error, 
             max_iteration_number = self.test_data.max_iteration_number) 
 
-    def _get_validation_set(self):
-        class_number = self.test_data.class_number
-        validation_set = [[]] * self.test_data.class_number
-        org_validation_set = self.test_data.validation_set
-        
-        for i in range(class_number):
-            set_class = _get_set_class(self.classified_img, 
-                                       org_validation_set[i])
-            validation_set[set_class] = \
-                    validation_set[set_class] + org_validation_set[i]
-        
-        return validation_set
 
 class KMeansStressTest(StressTest):
     def __init__(self, test_data, iterations, algorithm_name, output_file):
